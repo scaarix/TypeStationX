@@ -1,0 +1,86 @@
+points:
+  zones:
+    matrix:
+      columns:
+        fpinky:
+        pinky:
+          key.stagger: 2
+        ring:
+          key.splay: 0
+          key.origin: [-12, -19]
+          key.stagger: 5
+        middle:
+          key.stagger: 5
+        index:
+          key.stagger: -6
+        inner:
+          key.stagger: -2
+      rows:
+        bottom:
+        home:
+        top:
+        number:
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-25, -23]
+      columns:
+        near:
+          rows.single.skip: true
+        home:
+          rows.single.skip: true
+          key.spread: 21.25
+          key.splay: -13
+          key.origin: [-11.75, -9]
+        far:
+          key.spread: 21.25
+          key.splay: -13
+          key.origin: [-9.5, -9]
+      rows:
+        thumb:
+        single:
+outlines:
+  keys:
+  - what: rectangle
+    where: true
+    size: 18.3
+
+pcbs:
+  keyb:
+    outlines:
+      main:
+        outline: keys
+    footprints:
+      mx_hotswap:
+        what: mx
+        params:
+          keycaps: true
+          reverse: true
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+        where: true
+      diode:
+        what: diode
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -8.5]
+        where: true
+      trrs:
+        what: trrs
+        params:
+          A: GND
+          B: GND
+          C: P2
+          D: VCC
+          reverse: true
+        adjust:
+        - ref: thumbfan_far_single
+          shift: [-12.7,7.62]
+      mcu:
+        what: promicro
+        adjust:
+        - ref: matrix_inner_top
+          rotate: -90
+          shift: [0,11]
