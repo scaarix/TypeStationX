@@ -1,86 +1,202 @@
+
 points:
   zones:
     matrix:
+      anchor:
+        rotate: 5
       columns:
-        fpinky:
         pinky:
-          key.stagger: 2
+          key:
+            spread: 19
+            rows:
+              bottom:
+                column_net: P21
+              home:
+                column_net: P20
         ring:
-          key.splay: 0
-          key.origin: [-12, -19]
-          key.stagger: 5
+          key:
+            spread: 19
+            splay: -5
+            origin: [-13, -19]
+            stagger: 10
+            rows:
+              bottom:
+                column_net: P19
+              home:
+                column_net: P18
         middle:
-          key.stagger: 5
+          key:
+            spread: 19
+            stagger: 5
+            rows:
+              bottom:
+                column_net: P15
+              home:
+                column_net: P14
         index:
-          key.stagger: -6
-        inner:
-          key.stagger: -2
+          key:
+            spread: 19
+            stagger: -6
+            rows:
+              bottom:
+                column_net: P26
+              home:
+                column_net: P10
+        index_far:
+          key:
+            spread: 19
+            stagger: -6
+            rows:
+              bottom:
+                column_net: P26
+              home:
+                column_net: P10
       rows:
         bottom:
+          padding: 19
         home:
+          padding: 19
         top:
-        number:
-    thumbfan:
+    thumb:
       anchor:
-        ref: matrix_inner_bottom
-        shift: [-25, -23]
+        ref: matrix_index_bottom
+        shift: [-10, -27]
+        rotate: 0
       columns:
         near:
-          rows.single.skip: true
+          key:
+            origin: [1,10]
+          rows:
+            home:
+              rotate: -90
+              column_net: P8
         home:
-          rows.single.skip: true
+
+          rows:
+            home:
+              column_net: P9
           key.spread: 21.25
           key.splay: -13
           key.origin: [-11.75, -9]
-        far:
+        pen:
           key.spread: 21.25
           key.splay: -13
           key.origin: [-9.5, -9]
-      rows:
-        thumb:
-        single:
-outlines:
-  keys:
-  - what: rectangle
-    where: true
-    size: 18.3
-
-pcbs:
-  keyb:
-    outlines:
-      main:
-        outline: keys
+  key:
     footprints:
-      mx_hotswap:
-        what: mx
+      mx:
+        type: mx
+        nets:
+          from: GND
+          to: "{{column_net}}"
         params:
           keycaps: true
           reverse: true
-          from: "{{colrow}}"
-          to: "{{column_net}}"
+          hotswap: false
+
+outlines:
+  plate:
+    - what: rectangle
+      where: true
+      asym: source
+      size: 22
+      corner: 3
+    - what: rectangle
+      where: true
+      asym: source
+      size: 14
+      bound: false
+      operation: subtract
+  pcb_perimeter_raw:
+    - what: rectangle
+      where: true
+      asym: source
+      size: 18
+      corner: 1
+  polygon:
+    - what: polygon # all borders
+      operation: stack
+      points:
+        - ref: matrix_pinky_bottom
+          shift: [-10,-10]
+        - ref: matrix_pinky_top
+          shift: [-10,0.8u]
+        - ref: matrix_middle_top
+          shift: [-9,10]
+        - ref: matrix_middle_top
+          shift: [9,10]
+        - ref: matrix_index_top
+          shift: [1.45u,9]
+        - ref: matrix_index_far_top
+          shift: [29.5,9]
+        - ref: thumb_pen
+          shift: [18,-6]
+          rotate: -30
+        - ref: thumb_home_home
+          shift: [10,-19]
+        - ref: thumb_near_home
+          shift: [9,-15]
+  pcb_perimeter:
+    - what: outline # keys
+      name: pcb_perimeter_raw
+    - what: outline
+      name: polygon
+      operation: add
+
+pcbs:
+  tiny20:
+    outlines:
+      main:
+        outline: pcb_perimeter
+    footprints:
+      keys:
+        what: mx
         where: true
-      diode:
-        what: diode
         params:
-          from: "{{colrow}}"
-          to: "{{row_net}}"
-        adjust:
-          shift: [0, -8.5]
-        where: true
+          from: GND
+          to: "{{column_net}}"
+          keycaps: true
+          reverse: true
+          hotswap: false
+      promicro:
+        what: promicro
+        where:
+          ref: matrix_index_far_top
+          shift: [-6, -0.5u]
+          rotate: -90
+        params:
+          orientation: down
       trrs:
         what: trrs
+        where:
+          ref: matrix_pinky_home
+          shift: [2, 1.1u]
+          rotate: 0
         params:
           A: GND
           B: GND
-          C: P2
+          C: P1
           D: VCC
           reverse: true
-        adjust:
-        - ref: thumbfan_far_single
-          shift: [-12.7,7.62]
-      mcu:
-        what: promicro
-        adjust:
-        - ref: matrix_inner_top
-          rotate: -90
-          shift: [0,11]
+          symmetric: true
+      reset:
+        what: button
+        where:
+          ref:
+            - matrix_ring_home
+          shift: [-0.7u, 0]
+          rotate: 90
+        params:
+          from: RST
+          to: GND
+      resetbottom:
+        what: button
+        where:
+          ref:
+            - matrix_ring_home
+          shift: [-0.7u, 0]
+          rotate: 90
+        params:
+          from: RST
+          to: GND
+          side: B
