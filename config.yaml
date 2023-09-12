@@ -172,7 +172,7 @@ pcbs:
         what: trrs
         where:
           ref: matrix_index_far_top
-          shift: [42, -30]
+          shift: [42, -34]
           rotate: -90
         params:
           A: GND
