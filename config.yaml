@@ -117,7 +117,7 @@ outlines:
       operation: stack
       points:
         - ref: matrix_pinky_bottom
-          shift: [-15,-10]
+          shift: [-15,-13]
         - ref: matrix_pinky_top
           shift: [-13,0.8u]
         - ref: matrix_middle_top
@@ -164,16 +164,16 @@ pcbs:
         what: promicro
         where:
           ref: matrix_index_far_top
-          shift: [25, -0.5u]
+          shift: [28, -0.5u]
           rotate: -90
         params:
           orientation: down
       trrs:
         what: trrs
         where:
-          ref: matrix_pinky_home
-          shift: [2, 1.1u]
-          rotate: 0
+          ref: matrix_index_far_top
+          shift: [42, -30]
+          rotate: -90
         params:
           A: GND
           B: GND
