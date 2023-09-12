@@ -67,7 +67,6 @@ points:
             origin: [1,10]
           rows:
             home:
-              rotate: -90
               column_net: P8
         home:
 
@@ -181,24 +180,3 @@ pcbs:
           D: VCC
           reverse: true
           symmetric: true
-      reset:
-        what: button
-        where:
-          ref:
-            - matrix_ring_home
-          shift: [-0.7u, 0]
-          rotate: 90
-        params:
-          from: RST
-          to: GND
-      resetbottom:
-        what: button
-        where:
-          ref:
-            - matrix_ring_home
-          shift: [-0.7u, 0]
-          rotate: 90
-        params:
-          from: RST
-          to: GND
-          side: B
