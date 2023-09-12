@@ -60,7 +60,7 @@ points:
     thumb:
       anchor:
         ref: matrix_index_bottom
-        shift: [-10, -27]
+        shift: [-7, -35]
         rotate: 0
       columns:
         near:
@@ -142,12 +142,16 @@ outlines:
     - what: outline
       name: polygon
       operation: add
+  pcb:
+    - what: outline
+      name: pcb_perimeter
+      fillet: 3
 
 pcbs:
   tiny20:
     outlines:
       main:
-        outline: pcb_perimeter
+        outline: pcb
     footprints:
       keys:
         what: mx
@@ -162,7 +166,7 @@ pcbs:
         what: promicro
         where:
           ref: matrix_index_far_top
-          shift: [-6, -0.5u]
+          shift: [19, -0.5u]
           rotate: -90
         params:
           orientation: down
