@@ -10,9 +10,8 @@ currently in development and the repo is a mess
 - [ ] Clean up repository
 
 # Parts
-
-2x https://www.adafruit.com/product/5773
-32x SOD123 Diodes
+- 2x https://www.adafruit.com/product/5773
+- 32x SOD123 Diodes
 
 
 
