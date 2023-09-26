@@ -13,7 +13,7 @@ currently in development and the repo is a mess
 
 2x https://www.adafruit.com/product/5773
 32x SOD123 Diodes
-PCB (of course)
+
 
 
 
