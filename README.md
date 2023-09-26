@@ -9,6 +9,9 @@ currently in development and the repo is a mess
 - [ ] Clean up pcb
 - [ ] Clean up repository
 
+# Parts and prerequisites needed
+
+2x https://www.adafruit.com/product/5773
 
 
 # HUGE THANKS TO
