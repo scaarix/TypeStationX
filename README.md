@@ -1,7 +1,7 @@
-# ps2-keyboard-thing
+# ps2_KB
 a single mcu keyboard that uses ps2 controller connectors
 
-currently in development and the repo is a mess
+currently in development
 
 
 # TODO:
