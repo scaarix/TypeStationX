@@ -2,7 +2,7 @@
 a single mcu keyboard that uses ps2 controller connectors
 
 currently in development
-when ordering pcbs make sure to upload and order both<a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/ps2_keyb/gerbers/left-gerbers.zip">left</a> and <a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/ps2_keyb/gerbers/right-gerbers.zip">right</a> sides
+when ordering pcbs make sure to upload and order both<a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/ps2_keyb/gerbers/left-gerbers.zip"> left</a> and <a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/ps2_keyb/gerbers/right-gerbers.zip">right</a> sides
 
 # TODO:
 - [ ] Create firmware
