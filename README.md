@@ -6,8 +6,8 @@ currently in development and the repo is a mess
 
 # TODO:
 - [ ] Create firmware
-- [ ] Clean up pcb
-- [ ] Clean up repository
+- [x] Clean up pcb
+- [x] Clean up repository
 
 # Parts
   2x https://www.adafruit.com/product/5773
