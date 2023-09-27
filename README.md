@@ -8,6 +8,7 @@ currently in development
 - [ ] Create firmware
 - [x] Clean up pcb
 - [x] Clean up repository
+- [ ] ADD SECOND HALF TO PCB
 
 # Parts
 | Part name                         | Amount       |Link                                                                                                   |
