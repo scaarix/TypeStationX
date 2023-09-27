@@ -18,7 +18,7 @@ currently in development and the repo is a mess
 | Elite C                           | 1            |                                                                                                       |
 | 1N4148W Diode                     | 32           |<a href="https://www.adafruit.com/product/5099">SOD123</a> |
 | PLaystation extension cable       | 2            |<a href="https://www.adafruit.com/product/5773">Cable</a>                                                                                                      |
-| Female controller ports           | 1            |<a href="[https://www.amazon.ca/Adapter-100-240V-Transformers-Switching-Adaptor/dp/B01AZLA9XQ/](https://www.adafruit.com/product/5773)" target="_blank">Controller ports</a>                   |
+| Female controller ports           | 1            |<a href="[https://www.amazon.ca/Adapter-100-240V-Transformers-Switching-Adaptor/dp/B01AZLA9XQ/](https://www.adafruit.com/product/5773)">Controller ports</a>                   |
 
 
 
