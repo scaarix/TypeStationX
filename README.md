@@ -10,9 +10,6 @@ currently in development and the repo is a mess
 - [x] Clean up repository
 
 # Parts
-  2x https://www.adafruit.com/product/5773
-  2 x female ps2 controller ports https://www.aliexpress.com/item/1005005547168036.html?spm=a2g0o.productlist.main.47.63aa6e50gPBv1v&algo_pvid=186e3400-9a3a-4116-adb0-feedf2eab064
-
 | Part name                         | Amount       |Link                                                                                                   |
 | --------------------------------- | ------------ | ------------------------------------------------------------------------------------------            |
 | Elite C                           | 1            |                                                                                                       |
