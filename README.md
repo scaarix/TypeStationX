@@ -1,4 +1,4 @@
-# ps2_KB
+# TypeStationX
 a single mcu keyboard that uses ps2 controller connectors
 
 currently in development
