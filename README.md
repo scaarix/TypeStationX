@@ -18,7 +18,7 @@ when ordering pcbs make sure to upload and order both<a href="https://github.com
 | KB2040                            | 1            | <a href="https://www.adafruit.com/product/5302">KB2040</a>|
 | 1N4148W Diode                     | 32           |<a href="https://www.adafruit.com/product/5099">SOD123</a> |
 | PLaystation extension cable       | 2            |<a href="https://www.adafruit.com/product/5773">Cable</a>|
-| Female controller ports           | 1            |<a href="https://www.aliexpress.com/item/1005005547168036.html?spm=a2g0o.productlist.main.47.63aa6e50gPBv1v&algo_pvid=186e3400-9a3a-4116-adb0-feedf2eab064">Controller ports</a>|
+| Female controller ports           | 2            |<a href="https://www.aliexpress.com/item/1005005547168036.html?spm=a2g0o.productlist.main.47.63aa6e50gPBv1v&algo_pvid=186e3400-9a3a-4116-adb0-feedf2eab064">Controller ports</a>|
 | Your choice of mx switches        | 32            |                                                                                                       |
 | 6mmx3mm magnets                   | 10           |<a href="https://www.amazon.com/FINDMAG-Magnets-Magnetic-Whiteboard-Refrigerator/dp/B08M3YP56J">magnets</a>|
 
