@@ -6,7 +6,7 @@ a single mcu keyboard that uses ps2 controller connectors
 RP2040 based
 
 currently in development
-when ordering pcbs make sure to upload and order both<a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/ps2_keyb/gerbers/left-gerbers.zip"> left</a> and <a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/ps2_keyb/gerbers/right-gerbers.zip">right</a> sides
+when ordering pcbs make sure to upload and order both<a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/TypeStationX/gerbers/left.zip"> left</a> and <a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/TypeStationX/gerbers/left.zip">right</a> sides
 
 # TODO:
 - [x] Create firmware
