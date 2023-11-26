@@ -22,6 +22,8 @@ when ordering pcbs make sure to upload and order both<a href="https://github.com
 | Your choice of mx switches        | 32            |                                                                                                       |
 | 6mmx3mm magnets                   | 10           |<a href="https://www.amazon.com/FINDMAG-Magnets-Magnetic-Whiteboard-Refrigerator/dp/B08M3YP56J">magnets</a>|
 
+WARNING: Your PS2 controller cable extension may only have 8 out of the 9 pins needed. It may be better just to use two ps2 controllers to make your own cable!
+
 # HUGE THANKS TO
 Chewiedies for helping make the stunning case :)
 
