@@ -2,8 +2,7 @@
 
 AKA PS2-KB
 
-a single mcu keyboard that uses ps2 controller connectors
-RP2040 based
+a single mcu RP2040 based keyboard that uses ps2 controller connectors
 
 currently in development
 when ordering pcbs make sure to upload and order both<a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/TypeStationX/gerbers/left.zip"> left</a> and <a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/TypeStationX/gerbers/left.zip">right</a> sides
