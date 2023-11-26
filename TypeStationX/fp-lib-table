@@ -1,7 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "Keebio-Parts")(type "KiCad")(uri "D:/Kicad/Libraries/footprints/Keebio-Parts.pretty")(options "")(descr ""))
-  (lib (name "Switch_Keyboard_Cherry_MX")(type "KiCad")(uri "D:/Kicad/Libraries/footprints/Switch_Keyboard_Cherry_MX.pretty")(options "")(descr ""))
-  (lib (name "kbd")(type "KiCad")(uri "D:/Kicad/Libraries/kbd-main/kicad-footprints/kbd.pretty")(options "")(descr ""))
-  (lib (name "kbd.3dshapes")(type "KiCad")(uri "D:/Kicad/Libraries/kbd-main/kicad-packages3D/kbd.3dshapes")(options "")(descr ""))
-)
