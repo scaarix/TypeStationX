@@ -9,7 +9,9 @@ when ordering pcbs make sure to upload and order both<a href="https://github.com
 
 # TODO:
 - [x] Create firmware
-- [ ] Add atmega32u4 support
+- [ ] Create build guide
+- [ ] Buy pcb and assemble
+- [ ] Add photos
 
 # Parts
 | Part name                         | Amount       |Link                                                                                                   |
