@@ -2,6 +2,9 @@
 
 AKA PS2-KB
 
+# Update
+PCB arrived now waiting for parts to arrive
+
 a single mcu RP2040 based keyboard that uses ps2 controller connectors
 
 currently in development
