@@ -10,7 +10,7 @@ a single mcu RP2040 based keyboard that uses ps2 controller connectors
 
 currently in development
 when ordering pcbs make sure to upload and order both<a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/TypeStationX/gerbers/left.zip"> left</a> and <a href="https://github.com/scaarix/ps2-keyboard-thing/blob/main/TypeStationX/gerbers/left.zip">right</a> sides
-Findings:
+# Findings:
 I don't think there are any ps2 controller extension cables that have all 9 pins available. Because one of the pins aren't needed, they get rid of it to save a few cents. So making your own cable is nessisary.
 If i make a rev2 (i probably won't) it would most likely have an IO expander on the other half using spi (6 pins on the connector) so that I can use the cable instead of having to create my own.
 
